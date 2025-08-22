@@ -438,6 +438,14 @@ def generate_model_report(model, X_test: pd.DataFrame, y_test: pd.Series,
 def calculate_statistics(data):
     """Calculate basic statistics for dataset."""
     return {
+    'mean': data.mean(),
+    'std': data.std(),
+    'count': len(data)
+    }
+
+def calculate_statistics(data):
+    """Calculate basic statistics for dataset."""
+    return {
         'mean': data.mean(),
         'std': data.std(),
         'count': len(data)
